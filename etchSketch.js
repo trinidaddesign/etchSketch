@@ -9,12 +9,12 @@ function createGrid(x) {
         row = document.createElement('div');
         row.classList.add('row');
         container.appendChild(row)
-        row.textContent = i;
+        row.textContent
     }   for (let j = 0; j < x; j++){
             column = document.createElement('div');
             column.classList.add('column');
             row.appendChild(column);
-            column.textContent = j;
+            column.textContent;
     }
     
 }
