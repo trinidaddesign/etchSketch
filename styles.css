@@ -4,16 +4,15 @@ body {
     width: 100%;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
- 
+.container {
+    display: grid;
+    width: 700px;
+    height: 400px;
+    background-color: #e0e0e0;
+    border:#acacac solid ;
+    margin: auto; 
 }
 
-.container div {
-    border: 1px solid black;
-    height: 50px;
-    width: 50px;
-    display: inline-block;
+.box {
+    border: black solid thin;
 }

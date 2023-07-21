@@ -1,22 +1,19 @@
 const container = document.querySelector('.container');
 
 
-function createGrid(x) {
-    for (let i = 0; i < x; i++) {
-        if (x >= 100 || x < 4) {
-            alert('ERROR. please enter a valid number')
-            break;};
-        row = document.createElement('div');
-        row.classList.add('row');
-        container.appendChild(row)
-        row.textContent
-    }   for (let j = 0; j < x; j++){
-            column = document.createElement('div');
-            column.classList.add('column');
-            row.appendChild(column);
-            column.textContent;
+function createGrid(size) {
+    size = prompt('enter a number between 4 and 99')
+container.style.gridTemplateColumns = `repeat(${size} , 1fr)`;
+container.style.gridTemplateRows = `repeat(${size} , 1fr)`;
+    let x = size * size;
+    for (i = 0; i < x; i++) {
+        let box = document.createElement('div');
+        box.classList.add('box');
+        container.appendChild(box);
+        box.addEventListener('click', (e => 
+            e.target.style.background = 'black'))
     }
-    
 }
 
-console.log(createGrid(10))
+
+createGrid()
