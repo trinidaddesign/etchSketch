@@ -8,13 +8,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: lightseagreen
 }
 
 .etchContainer {
     
     background: rgb(192, 4, 4);
     padding: 50px;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
     padding-top: 100px;
     border-radius: 10% 10% 5% 5%;
 }
@@ -37,3 +38,28 @@ body {
     justify-content: space-between;
     padding-top: 50px;
 }
+
+.reset {
+    color: black;
+    background-color: yellow;
+    border: none;
+    padding: 5px;
+    font-size: 20px;
+    height: 100px;
+    width: 100px;
+    box-shadow: 0 2px 4px darkslategray;
+    border-radius: 50%;
+}
+
+.color {
+    color: black;
+    background-color: yellow;
+    border: none;
+    padding: 5px;
+    font-size: 20px;
+    height: 100px;
+    width: 100px;
+    box-shadow: 0 2px 4px darkslategray;
+    border-radius: 50%;
+}
+
