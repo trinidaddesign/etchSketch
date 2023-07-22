@@ -4,6 +4,21 @@ body {
     width: 100%;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.etchContainer {
+    
+    background: rgb(192, 4, 4);
+    padding: 50px;
+    padding-bottom: 150px;
+    padding-top: 100px;
+    border-radius: 10% 10% 5% 5%;
+}
+
 .container {
     display: grid;
     width: 700px;
@@ -15,4 +30,10 @@ body {
 
 .box {
     border: black solid thin;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
 }
