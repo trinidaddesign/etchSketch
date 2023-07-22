@@ -13,10 +13,10 @@ container.style.gridTemplateRows = `repeat(${size} , 1fr)`;
         let box = document.createElement('div');
         box.classList.add('box');
         container.appendChild(box);
-        box.addEventListener('mouseover', (e => 
-            e.target.style.background = 'black'))
-        box.removeEventListener('click', (e =>
-            e.target.style.background = '#e0e0e0'))
+        box.addEventListener('mouseover', (e => {
+            if(e.buttons) {
+                e.target.style.background = 'black'
+            }}))
     }
 }
 
