@@ -16,14 +16,25 @@ container.style.gridTemplateRows = `repeat(${size} , 1fr)`;
     }
 }
 
-function getSize() {
-    input = prompt('Enter a number between 4 and 100');
+
+/*window.addEventListener('load', (e => {
+    createGrid(20);
+}));*/
+
+
+
+
+function getSize(input) {
+    //input = prompt('Enter a number between 4 and 100');
     input >= 4 && input <= 100 ? createGrid(input) : alert('Please enter a valid number');}
 
 
-getSize()
-
 function resetGrid() {
     let squares = container.querySelectorAll("div");
-    squares.forEach((div) => (div.style.backgroundColor = "#e0e0e0"));
-}
+    squares.forEach((div) => (div.style.backgroundColor = "#e0e0e0"));}
+
+
+
+
+
+

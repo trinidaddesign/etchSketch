@@ -18,11 +18,12 @@ h1 {
     font-weight: 1000;
 }
 .etchContainer {
+    text-align: center;
     background: rgb(192, 4, 4);
     box-shadow: 0px 1px 5px 2px black;
     padding: 50px;
     padding-bottom: 100px;
-    padding-top: 100px;
+    padding-top: 20px;
     border-radius: 10% 10% 5% 5%;
 }
 
@@ -45,7 +46,8 @@ h1 {
     padding-top: 50px;
 }
 
-.reset {
+.reset,
+.color{
     color: black;
     background-color: yellow;
     border: none;
@@ -57,16 +59,4 @@ h1 {
     border-radius: 50%;
 }
 
-
-.color {
-    color: black;
-    background-color: yellow;
-    border: none;
-    padding: 5px;
-    font-size: 20px;
-    height: 100px;
-    width: 100px;
-    box-shadow: 0 2px 4px darkslategray;
-    border-radius: 50%;
-}
 
