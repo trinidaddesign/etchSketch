@@ -25,8 +25,10 @@ container.style.gridTemplateRows = `repeat(${size} , 1fr)`;
 
 
 
+
 function getSize(input) {
-    input > 3 && input < 101 ? createGrid(input) : alert('Please enter a valid number');
+    input = Number(input);
+    input > 3 && input < 101 ? createGrid(input) : console.log('Please enter a valid number');
 return input;}
 
 
