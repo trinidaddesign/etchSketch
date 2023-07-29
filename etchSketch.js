@@ -1,9 +1,18 @@
 let color = "black";
 
-function changeColor() {
-    color = "red"
+function red() {
+    color = "red";
+}
+function blue() {
+    color = "blue";
+}
+function green() {
+    color = "green"
 }
 
+function black() {
+    color = "black";
+}
 function createGrid(size) {
 let container = document.querySelector('.container');
 let boxs = container.querySelectorAll('div');
