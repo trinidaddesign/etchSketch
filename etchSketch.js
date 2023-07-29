@@ -3,6 +3,8 @@
 
 function createGrid(size) {
 let container = document.querySelector('.container');
+let boxs = container.querySelectorAll('div');
+boxs.forEach((div) => div.remove());
 container.style.gridTemplateColumns = `repeat(${size} , 1fr)`;
 container.style.gridTemplateRows = `repeat(${size} , 1fr)`;
     let x = size * size;
@@ -17,13 +19,16 @@ container.style.gridTemplateRows = `repeat(${size} , 1fr)`;
     }
 }
 
+window.addEventListener('load', (e => {
+    createGrid(20);
+}))
 
 function getSize(input) {
-    input = prompt('Enter a number between 4 and 100')
+    input = prompt('Enter a number between 4 and 100');
     input > 3 && input < 101 ? createGrid(input) : console.log('Please enter a valid number');}
 
 
-function resetGrid() {
+function eraseGrid() {
     let container = document.querySelector('.container');
     let box = container.querySelectorAll("div");
     box.forEach((div) => (div.style.backgroundColor = "#e0e0e0"));}
