@@ -13,10 +13,11 @@ function green() {
 function black() {
     color = "black";
 }
+
 function createGrid(size) {
 let container = document.querySelector('.container');
-let boxs = container.querySelectorAll('div');
-boxs.forEach((div) => div.remove());
+let boxes = container.querySelectorAll('div');
+boxes.forEach((div) => div.remove());
 container.style.gridTemplateColumns = `repeat(${size} , 1fr)`;
 container.style.gridTemplateRows = `repeat(${size} , 1fr)`;
     let x = size * size;
@@ -45,6 +46,4 @@ function eraseGrid() {
     let box = container.querySelectorAll("div");
     box.forEach((div) => (div.style.backgroundColor = "#e0e0e0"));}
 
-
-
-
+document.querySelector('.erase').addEventListener('click', (e => {eraseGrid()}))
