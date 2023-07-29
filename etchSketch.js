@@ -1,5 +1,8 @@
+let color = "black";
 
-
+function changeColor() {
+    color = "red"
+}
 
 function createGrid(size) {
 let container = document.querySelector('.container');
@@ -14,7 +17,7 @@ container.style.gridTemplateRows = `repeat(${size} , 1fr)`;
         container.appendChild(box);
         box.addEventListener('mouseover', (e => {
             if(e.buttons) {
-                e.target.style.background = 'black'
+                e.target.style.background = color;
             }}))
     }
 }
@@ -32,6 +35,7 @@ function eraseGrid() {
     let container = document.querySelector('.container');
     let box = container.querySelectorAll("div");
     box.forEach((div) => (div.style.backgroundColor = "#e0e0e0"));}
+
 
 
 
