@@ -47,7 +47,8 @@ h1 {
 }
 
 .reset,
-.color{
+.color,
+.size{
     color: black;
     background-color: yellow;
     border: none;
