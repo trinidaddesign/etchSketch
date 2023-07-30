@@ -47,3 +47,8 @@ function eraseGrid() {
     box.forEach((div) => (div.style.backgroundColor = "#e0e0e0"));}
 
 document.querySelector('.erase').addEventListener('click', (e => {eraseGrid()}))
+document.querySelector('.red').addEventListener('click', (e => {red()}));
+document.querySelector('.blue').addEventListener('click', (e => {blue()}));
+document.querySelector('.green').addEventListener('click', (e => {green()}));
+document.querySelector('.black').addEventListener('click', (e => {black()}));
+document.querySelector('.size').addEventListener('click', (e => {getSize()}))

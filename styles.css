@@ -48,7 +48,7 @@ h1 {
 
 .erase,
 .size,
-.color{
+#color{
     color: black;
     background-color: yellow;
     border: none;
